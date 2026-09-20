@@ -1,17 +1,3 @@
-import streamlit as st
-import pandas as pd
-
-# Ye function data ko cache karega (baar baar load nahi karega)
-@st.cache_data
-def load_data(file_path):
-    return pd.read_csv(file_path)
-
-@st.cache_resource
-def load_model():
-    # Agar aap koi ML model load kar rahe hain toh yahan cache karein
-    # jaise: model = joblib.load('model.pkl')
-    # return model
-    pass
 
 import os
 import pickle
@@ -22,13 +8,6 @@ import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
-
-st.set_page_config(
-    page_title="Thermal Source Detection",
-    page_icon="🔥",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 
 # ============================================================

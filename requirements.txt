@@ -1,10 +1,11 @@
 ﻿streamlit
+streamlit-folium
+folium
 pandas
 numpy
 scikit-learn
 matplotlib
 seaborn
-folium
 geopandas
 osmnx
 shapely
